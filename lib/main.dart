@@ -36,9 +36,7 @@ class MyCard extends StatelessWidget {
             gradient: LinearGradient(colors: [Colors.red, Colors.white, Colors.red]
             ),),
           child: Padding(padding: EdgeInsets.all(30)
-         , child: Row(
-           children: [
-             Card(
+         , child: Card(
                     color: Colors.white,
                     elevation: 15,
                     shadowColor: Colors.black,
@@ -48,25 +46,24 @@ class MyCard extends StatelessWidget {
 
                   child: Column(
                     children: [
-                      SizedBox(height: 30, width: 30,),
+                      SizedBox(height: 30, width: 30,), SizedBox(height: 50, width: 30,),
                       RichText(
                       textAlign: TextAlign.center, text: TextSpan(
                       style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold, color: Colors.black),
 
                     children: [
                       TextSpan( text: 'This is My Novel\n' ),
-                      TextSpan(text: 'IshqTara',
+                      TextSpan(text: 'Ishq Tara',
                         style: TextStyle(
                           fontWeight: FontWeight.bold, fontSize: 35,color: Colors.red),
 
                     ), ],)
-                      ),SizedBox(height: 25, width: 30,),
+                      ),SizedBox(height: 40, width: 30,),
 
-                    //SizedBox(height: 30, width: 30,),
                     Padding(
                       padding: const EdgeInsets.all(20),
                       child: Image(image: AssetImage('assets/ab.jpg'),),
-                    ),
+                    ), SizedBox(height: 30, width: 30,),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
@@ -95,17 +92,15 @@ class MyCard extends StatelessWidget {
                               ),
                             ),
                           )
-
-
                         ],
-                      )
-                    ]
+
                   ),
-                  ),
+
 
            ],
          ),
 
-            ), ));
-  }
+            ), ),)
+        );
+        }
 }
